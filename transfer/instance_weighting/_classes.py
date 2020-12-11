@@ -355,5 +355,6 @@ class TwoStageWeighting:
     objective = cv.quad_form(beta, P)
     constraints = [beta >= 0, cv.sum(beta) == k]
     cv.Problem(cv.Minimize(objective), constraints).solve(solver = "ECOS")
+    self.beta_weights_ = beta.value
     
     return self
