@@ -1,3 +1,6 @@
+"""
+Models for performing domain adaptation via instance weighting.
+"""
 import numpy as np
 import cvxpy as cv
 
