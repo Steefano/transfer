@@ -1,5 +1,5 @@
 """
-Model for performing domain adaptation by instance weighting.
+Models for performing domain adaptation via feature transformation.
 """
 import numpy as np
 
