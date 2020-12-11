@@ -1,3 +1,6 @@
+"""
+Model for performing domain adaptation by instance weighting.
+"""
 import numpy as np
 
 #######
