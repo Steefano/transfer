@@ -8,6 +8,9 @@ Welcome to transfer's documentation!
 
 Just trying.
 
+.. automodule::
+   :members:
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
