@@ -1,0 +1,5 @@
+numpy==1.19.3
+cvxpy==1.1.7
+scikit_learn==0.23.2
+transfer==0.0.1
+git+https://github.com/Steefano/transfer
