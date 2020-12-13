@@ -15,19 +15,8 @@ class FeatureReplication:
   features referring to the source domain, features referring to the target domain and
   features referring to both.
   
-  More specifically, the two transformations
-  .. math::
-  	\\begin{eqnarray}
-	\\phi_{1} : X_{S} \\longrightarrow \\bar{X} \\\\
-	\\phi_{2} : X_{T} \longrightarrow \\bar{X}
-	\\end{eqnarray}
-    
-  are defined as
-  .. math::
-  	\\begin{eqnarray}
-	\\phi_{1}(x) = \\left[x, x, \\right] \\\\
-	\\phi_{2}(x) = \\left[x, 0, x\\right]
-	\\end{eqnarray}
+  More specifically, the two transformations :math:`\phi_{1}\` and :math:`\phi_{2}`
+  are defined as :math:`\phi_{1}(x) = [x, x, 0]` and :math:`\phi_{2}(x) = [x, 0, x]`.
     
   The generalization to multiple source domains is straightforward.
   """
