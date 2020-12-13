@@ -17,17 +17,17 @@ class FeatureReplication:
   
   More specifically, the two transformations
   .. math::
-  	\begin{eqnarray}
-	\phi_{1} : X_{S} \longrightarrow \bar{X} \\
-	\phi_{2} : X_{T} \longrightarrow \bar{X}
-	\end{eqnarray}
+  	\\begin{eqnarray}
+	\\phi_{1} : X_{S} \\longrightarrow \\bar{X} \\\\
+	\\phi_{2} : X_{T} \longrightarrow \\bar{X}
+	\\end{eqnarray}
     
   are defined as
   .. math::
-  	\begin{eqnarray}
-	\phi_{1}(x) = \left[x, x, 0right] \\
-	\phi_{2}(x) = \left[x, 0, x\right]
-	\end{eqnarray}
+  	\\begin{eqnarray}
+	\\phi_{1}(x) = \\left[x, x, \\right] \\\\
+	\\phi_{2}(x) = \\left[x, 0, x\\right]
+	\\end{eqnarray}
     
   The generalization to multiple source domains is straightforward.
   """
