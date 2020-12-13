@@ -9,6 +9,7 @@ Subpackages
 
    transfer.feature_transformation
    transfer.instance_weighting
+   transfer.distribution_metrics
 
 Module contents
 ---------------
