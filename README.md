@@ -3,6 +3,7 @@ Python module implementing tools and methods for transfer learning.
 ## Table of contents
 * [Motivation](#motivation)
 * [Installation](#installation)
+* [Documentation](#documentation)
 ## Motivation
 **Transfer learning** (TL) is an area of machine learning that studies how to leverage knowledge gained from a series of one or more source domains to train a model on a target domain. TL is an interesting topic because there are many situations, in reality, where we have access to a large dataset belonging to a specific domain, and we would like to develop a model to apply to a different situation.
 
@@ -22,3 +23,5 @@ Currently, transfer is not distributed with PyPi. The only way to install the mo
 ```
 pip install git+https://github.com/Steefano/transfer
 ```
+## Documentation
+The documentation of the module can be found [here](https://transfer-python.readthedocs.io/en/main/).
