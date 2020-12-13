@@ -14,48 +14,9 @@ from sklearn.tree import DecisionTreeClassifier
 
 
 class KernelMeanMatching:
-  '''
+  """
   Kernel Mean Matching (KMM).
-
-  Parameters
-  ----------
-
-  B : float, default = 1000
-    limit on the discrepancy between the probability
-    distributions
-
-  epsilon : float, default = 0.1
-    measure to assure that the resulting weights define
-    something close to a probability distribution
-
-  kernel : {"gaussian", "linear", "polynomial", "sigmoid", "laplacian"} or callable, default = "gaussian"
-    kernel used in the method.
-
-    "gaussian" : rbf kernel
-
-    "linear" : linear kernel
-
-    "polynomial" : polynomial kernel
-
-    "sigmoid" : sigmoid kernel
-
-    "laplacian" : laplacian kernel
-
-  gamma : float, default = None
-    the gamma parameter in the kernel definition (e.g. the coefficient
-    of the inner product). If none it defaults to 1.0 / n_features.
-    if selected kernel is linear or custom, the parameter is ignored
-
-  coef0 : float, default = None
-    the coefficient paramenter in the kernel definition
-    when selecting polynomial or sigmoid kernel.
-    The parameter is ignored with other kernels.
-
-  degree : int, default = 3
-    the degree of the polynomial kernel.
-    The parameter is ignored if the selected kernel
-    is not polynomial
-  '''
+  """
 
   def __init__(self, B = 1000, epsilon = 0.1, kernel = "gaussian", gamma = None, coef0 = 1.0, degree = 3):
     self._B = B
@@ -159,31 +120,6 @@ class KernelMeanMatching:
 class KullbackLeiblerImportance:
   """
   Kullback-Leibler importance estimation procedure (KLIEP).
-
-  Parameters
-  ----------
-
-  b : "auto" or int, default = "auto"
-    numbers of target domain points to use as centers
-    of gaussian basis functions.
-
-    "auto" : b is set to be equale to the number
-      of target domain points.
-  
-  gamma : float, default = None
-    the gamma parameter in the gaussian kernel definition.
-    If None defaults to 1 / n_features.
-
-  lambda : float, default = 0.
-    regularization parameter.
-
-  B : float, default = None
-    upper bound on the weights. It acts
-    as a form of regularization. If None, no upper bound
-    is considered.
-
-  epsilon : float, default = 0
-    allowed deviation of the weights' mean from one.
   """
 
   def __init__(self, b = "auto", gamma = None, reg = 0., B = None, epsilon = 0.):
@@ -276,29 +212,6 @@ class KullbackLeiblerImportance:
 class TwoStageWeighting:
   """
   2-Stage weighting framework for multi-source domain adaptation (2SW-MDA).
-
-  Parameters
-  ----------
-  
-  base_estimator : estimator object, default = DecisionTreeClassifier(max_depth = 1)
-    estimator to use to learn hypothesis during the second
-    stage of the weighting process
-    
-  base_weigher : weighter object, default = KernelMeanMatching()
-    weighter to use during the first stage of the
-    weighting process
-    
-  similarity : {"euclidean", "cosine", "l1"} or callable, default = "euclidean"
-    similarity function to use for computing similarity
-    matrix of target inputs
-    
-    "euclidean" : euclidean similarity defined as
-        1 / (1 + ||x - y||^2)
-    
-    "cosine" : cosine similarity
-    
-    "l1" : manhattan similarity defined as
-        1 / (1 + ||x - y||)
   """
 
   def __init__(self, base_estimator = DecisionTreeClassifier(max_depth = 1), base_weighter = KernelMeanMatching(), similarity = "euclidean"):
