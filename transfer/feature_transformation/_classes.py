@@ -15,7 +15,7 @@ class FeatureReplication:
   features referring to the source domain, features referring to the target domain and
   features referring to both.
   
-  More specifically, the two transformations :math:`\phi_{1}\` and :math:`\phi_{2}`
+  More specifically, the two transformations :math:`\phi_{1}` and :math:`\phi_{2}`
   are defined as :math:`\phi_{1}(x) = [x, x, 0]` and :math:`\phi_{2}(x) = [x, 0, x]`.
     
   The generalization to multiple source domains is straightforward.
@@ -52,7 +52,7 @@ class FeatureReplication:
 
   def transform(self, Xs, Xt):
     """
-    Applies the model to source domains' point :math:`X_{S}` and target domain points :math:`X_{T}.
+    Applies the model to source domains' point :math:`X_{S}` and target domain points :math:`X_{T}`.
 
     Parameters
     ----------
